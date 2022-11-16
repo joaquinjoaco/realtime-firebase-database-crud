@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/realtime-firebase-database-crud/static/css/main.abd64e84.css",
-    "main.js": "/realtime-firebase-database-crud/static/js/main.1a10f9ed.js",
+    "main.css": "/realtime-firebase-database-crud/static/css/main.284e48bb.css",
+    "main.js": "/realtime-firebase-database-crud/static/js/main.6ee5d4b0.js",
     "index.html": "/realtime-firebase-database-crud/index.html",
-    "main.abd64e84.css.map": "/realtime-firebase-database-crud/static/css/main.abd64e84.css.map",
-    "main.1a10f9ed.js.map": "/realtime-firebase-database-crud/static/js/main.1a10f9ed.js.map"
+    "main.284e48bb.css.map": "/realtime-firebase-database-crud/static/css/main.284e48bb.css.map",
+    "main.6ee5d4b0.js.map": "/realtime-firebase-database-crud/static/js/main.6ee5d4b0.js.map"
   },
   "entrypoints": [
-    "static/css/main.abd64e84.css",
-    "static/js/main.1a10f9ed.js"
+    "static/css/main.284e48bb.css",
+    "static/js/main.6ee5d4b0.js"
   ]
 }
