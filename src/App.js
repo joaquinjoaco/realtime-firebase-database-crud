@@ -34,10 +34,12 @@ function App() {
   // write
   const writeToDatabase = () => {
     const uuid = uid();
-    set(ref(db, `/${uuid}`), {
-      todo,
-      uuid,
-    });
+    if (todo !== '') {
+      set(ref(db, `/${uuid}`), {
+        todo,
+        uuid,
+      });
+    }
     setTodo("");
   }
 
@@ -48,16 +50,19 @@ function App() {
     setIsEdit(true);
     setTempUuid(todo.uuid);
     setTodo(todo.todo);
+
   }
 
   const handleSubmitChange = () => {
-    update(ref(db, `/${tempUuid}`), {
-      todo,
-      uuid: tempUuid,
-    });
+    if (todo !== '') {
+      update(ref(db, `/${tempUuid}`), {
+        todo,
+        uuid: tempUuid,
+      });
+      setIsEdit(false);
+      setTodo("");
 
-    setTodo("");
-    setIsEdit(false);
+    }
 
   }
 
