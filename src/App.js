@@ -74,27 +74,33 @@ function App() {
 
   return (
     <div className="App">
-      <input type="text" value={todo} onChange={handleTodoChange} />
+      <div className="input-container">
+        <input type="text" value={todo} onChange={handleTodoChange} />
 
-      {isEdit ? (
-        <>
-          <button onClick={handleSubmitChange}>Submit Change</button>
-          <button onClick={() => {
-            setIsEdit(false);
-            setTodo("");
-          }}
-          >X</button>
-        </>
-      ) : (
-        <button onClick={writeToDatabase}>Submit</button>
-      )}
-      {todos.map((todo) => (
-        <>
-          <h1>{todo.todo}</h1>
-          <button onClick={() => handleUpdate(todo)}>update</button>
-          <button onClick={() => handleDelete(todo)}>delete</button>
-        </>
-      ))}
+        {isEdit ? (
+          <>
+            <button onClick={handleSubmitChange}>Submit Change</button>
+            <button onClick={() => {
+              setIsEdit(false);
+              setTodo("");
+            }}
+            >Cancel</button>
+          </>
+        ) : (
+          <button onClick={writeToDatabase}>Submit</button>
+        )}
+      </div>
+      <div className="todo-wrapper">
+        {todos.map((todo) => (
+          <div className="todo" key={todo.uuid}>
+            <h1>{todo.todo}</h1>
+            <span>
+              <button onClick={() => handleUpdate(todo)}>update</button>
+              <button onClick={() => handleDelete(todo)}>delete</button>
+            </span>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
