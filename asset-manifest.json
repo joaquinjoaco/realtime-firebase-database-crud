@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/realtime-firebase-database-crud/static/css/main.abd64e84.css",
+    "main.js": "/realtime-firebase-database-crud/static/js/main.1a10f9ed.js",
+    "index.html": "/realtime-firebase-database-crud/index.html",
+    "main.abd64e84.css.map": "/realtime-firebase-database-crud/static/css/main.abd64e84.css.map",
+    "main.1a10f9ed.js.map": "/realtime-firebase-database-crud/static/js/main.1a10f9ed.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.abd64e84.css",
+    "static/js/main.1a10f9ed.js"
+  ]
+}
